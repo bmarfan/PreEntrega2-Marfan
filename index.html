@@ -19,15 +19,156 @@
 </head>
 
 <body>
-    <div class="layout">
-
+    <div id="wrap" class="wrap">
+        <!--START header index y navbar-->
+        <header id="header" class="header header__index">
+            <div class="header__fondo"></div>
+            <div class="container">
+                <div class="header__logo--horizontal">
+                    <img src="./images/marca_eltriwe_horiz_blanco.png" alt>
+                </div>
+                <div class="header__logo--vertical">
+                    <img src="./images/marca_eltriwe_vert_blanco.png" alt>
+                </div>
+            </div>
+        </header>
+        <nav id="navbar" class="navbar">
+            <div class="navbar__content container">
+                <div class="nav__left">
+                    <div class="nav__logo">
+                        <img src="./images/marca_eltriwe_blanco.png">
+                        <div class="nav__brand">
+                            <b>El Triwe</b>
+                            <span>Reserva Natural</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="nav__right navbar-expand-md">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarToggler" aria-controls="navbarToggler" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-list"></i>
+                    </button>
+                    <div class="nav__menu collapse navbar-collapse" id="navbarToggler">
+                        <ul>
+                            <li><a href="/index.html" class="nav__links">Inicio</a></li>
+                            <li><a href="./pages/caminatas.html" class="nav__links">Caminatas</a></li>
+                            <li><a href="./pages/experiencia-caballos.html" class="nav__links">Experiencia con caballos</a></li>
+                            <li><a href="./pages/educacion-ambiental.html" class="nav__links">Educación Ambiental</a></li>
+                            <li><a href="./pages/contacto.html" class="nav__links">Contacto</a></li>
+                        </ul>
+                    </div>
+                    
+                </div>
+            </div>
+        </nav>
+        <!--END header index y navbar-->
+        <!--START main index-->
+        <main id="main" class="main__container">
+            <section class="section">
+                <div class="section__container">
+                    <div class="container">
+                        <div class="section__title section__title--top">
+                            <h1><span>Reserva Natural</span> El Triwe</h1>
+                        </div>
+                        <div class="section__texto section__texto--top">
+                            <p>La “<i>Reserva Natural El Triwe</i>” es una iniciativa de conservación privada voluntaria a través de la cual buscamos proteger un ecosistema de bosque templado lluvioso, donde existe una alta biodiversidad compuesta por diferentes especies de flora y fauna endémica.</p>
+                        </div>
+                        <div class="row row-cols-1 row-cols-lg-2">
+                            <div class="col">
+                                <div class="section__video">
+                                    <div style="padding:56.25% 0 0 0;position:relative;"><iframe class="video__iframe" src="https://player.vimeo.com/video/200924853?h=981cc2e8dc&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="main__iframe"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="section__title section__title--right">
+                                    <h1>Reserva Natural el Triwe</h1>
+                                </div>
+                                <div class="section__texto section__texto--right">
+                                    <p>La “<i>Reserva Natural El Triwe</i>” es una iniciativa de conservación privada voluntaria a través de la cual buscamos proteger un ecosistema de bosque templado lluvioso, donde existe una alta biodiversidad compuesta por diferentes especies de flora y fauna endémica.</p>
+                                    <p>Conservamos una superficie de 90 hectáreas de bosque nativo que corresponden a la parte central de la Cuenca del Río López, el cual es el principal remanente de bosque templado lluvioso de la depresión intermedia de la Región de Los Lagos y que en su extensión abarca aproximadamente 1000 hectáreas continuas de bosques, mallines y humedales, generando así un hábitat de alta importancia en la conservación biológica de las especies de fauna presentes en este territorio (puma, zorro, monito del monte, diferentes especies de anfibios endémicos -sapito de darwin, entre otros - y una gran diversidad de aves).</p>
+                                    <p>Nuestro objetivo consiste en implementar un modelo de gestión predial sustentable que logre equilibrar la conservación del bosque nativo, la actividad agrícola ambientalmente responsable, y el desarrollo de actividades de ecoturismo y educación ambiental.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="section">
+                <div class="section__container">
+                    <div class="container">
+                        <div class="section__title">
+                            <h2>Descubre</h2>
+                        </div>
+                        <div class="row row-cols-1 row-cols-sm-1 row-cols-md-3">
+                            <div class="col">
+                                <article class="item__card">
+                                    <div class="card__img">
+                                        <img src="./images/caminata-1.jpg" class="card__img--filter">
+                                    </div>
+                                    <div class="card__tit">
+                                        <h3>Caminatas en la naturaleza</h3>
+                                    </div>
+                                    <div class="card__button"><a href="" class="card__link">Ver más</a></div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="item__card">
+                                    <div class="card__img">
+                                        <img src="./images/Roble.jpg" class="card__img--filter">
+                                    </div>
+                                    <div class="card__tit">
+                                        <h3>Experiencias con caballos</h3>
+                                    </div>
+                                    <div class="card__button"><a href="" class="card__link">Ver más</a></div>
+                                </article>
+                            </div>
+                            <div class="col">
+                                <article class="item__card">
+                                    <div class="card__img">
+                                        <img src="./images/mis-4.jpg" class="card__img--filter">
+                                    </div>
+                                    <div class="card__tit">
+                                        <h3>Educación ambiental</h3>
+                                    </div>
+                                    <div class="card__button"><a href="" class="card__link">Ver más</a></div>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!--END main index-->
+        <footer id="footer container-fluid">
+            <div class="row row-cols-2">
+                <div class="footer__contacto footer__list col-8">
+                    <ul>
+                        <li><b>Teléfonos: </b><span>+ (56 9) 6874 8486</span> / <span>+(56 9) 92402406</span></li>
+                        <li><b>E-mail: </b><a data-auto-recognition="true" href="mailto:reservaeltriwe@gmail.com">reservaeltriwe@gmail.com</a></li>
+                    </ul>
+                </div>
+                <div class="footer__rrss footer__list col-4">
+                    <ul>
+                        <li><a href="https://www.instagram.com/el_triwe/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
+                        <li><a href="https://www.facebook.com/reservaeltriwe/" title="Facebook"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="https://www.tripadvisor.cl/Attraction_Review-g294293-d13343885-Reviews-Reserva_Natural_El_Triwe-Frutillar_Los_Lagos_Region.html" title="Tripadvisor"><i class="fab fa-tripadvisor"></i></a></li>
+                    </ul>  
+                </div>
+            </div>
+            <div class="row">
+                <div class="footer__creditos">
+                    <i class="bi bi-cc-circle"></i> 2023 El Triwe. Todos los derechos reservados
+                </div>
+            </div>
+        </footer>
+    </div>
+    <!--
         <header id="header">
             <div class="header__fondo"></div>
             <div class="header__logo">
                 <div class="header__logo-horizontal desktop">
                     <img src="./images/marca_eltriwe_horiz_blanco.png">
                 </div>
-                <!--logo en mobile-->
+                
                 <div class="header__logo-vertical mobile">
                     <img src="./images/marca_eltriwe_vert_blanco.png">
                 </div>
@@ -64,7 +205,7 @@
                             <div class="embed-responsive desktop main__video">
                                 <iframe class="embed-responsive-item main__iframe" src="https://player.vimeo.com/video/200924853?h=981cc2e8dc&title=0&byline=0&portrait=0" width="600" height="338" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>
                             </div>
-                            <!--video en responsive-->
+                            
                             <div class="embed-responsive mobile main__video">
                                 <div style="padding:56.25% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/200924853?h=981cc2e8dc&title=0&byline=0&portrait=0" style="position:absolute;top:0;left:0;width:100%;height:100%;" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen class="main__iframe"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
                             </div>
@@ -106,24 +247,8 @@
                 </div>
             </section>
         </main>
-        <footer id="footer">
-            <div class="footer__contacto">
-                <p>
-                    <b>número</b>+56 9 6874 8486 / +56 9 92402406 
-                </p>
-                <p>
-                    <b>e-mail:</b><a data-auto-recognition="true" href="mailto:reservaeltriwe@gmail.com">reservaeltriwe@gmail.com</a>
-                </p>
-            </div>
-            <div class="footer__rrss">
-                <ul>
-                    <li><a href="https://www.instagram.com/el_triwe/" title="Instagram"><i class="fab fa-instagram"></i></a></li>
-                    <li><a href="https://www.facebook.com/reservaeltriwe/" title="Facebook"><i class="fab fa-facebook"></i></a></li>
-                    <li><a href="https://www.tripadvisor.cl/Attraction_Review-g294293-d13343885-Reviews-Reserva_Natural_El_Triwe-Frutillar_Los_Lagos_Region.html" title="Tripadvisor"><i class="fab fa-tripadvisor"></i></a></li>
-                </ul>  
-            </div>
-        </footer>
-    </div>
+        -->
+    
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
