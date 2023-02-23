@@ -235,6 +235,9 @@ footer a{
 .footer__rrss {
     font-size: 2.4em;
     padding: 0 10%;
+    height: 100%;
+    display: flex;
+    justify-content: end;
 }
 .footer__list ul{
     list-style: none;
@@ -555,5 +558,23 @@ footer a{
     }
     .header__logo--vertical{
         display: flex;
+    }
+}
+@media(max-width:576px){
+    .footer__rrss{
+        width: 100%;
+        justify-content: start;
+        margin-bottom: 22px;
+    }
+    .footer__contacto ul, .footer__rrss ul{
+        padding: 0;
+        text-align: right;
+    }
+    .footer__contacto b{
+        display: block;
+        margin-top: 10px;
+    }
+    .footer__contacto{
+        padding: 40px 20px 20px;
     }
 }
