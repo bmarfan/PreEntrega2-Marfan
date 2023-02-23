@@ -428,6 +428,10 @@ footer a{
 }
 
 /*CAMINATAS*/
+.section__galeria{
+    width: 100%;
+    overflow: hidden;
+}
 .section__container--pages{
     max-width: 70%;
     margin: auto;
@@ -501,15 +505,13 @@ footer a{
 }
 .galeria__imagen{
     overflow: hidden;
-    max-width: 200px;
-    max-height: 200px;
     display: flex;
     justify-content: center;
     border-radius: 5px;
     margin: 1px 0px;
 }
 .galeria__imagen img{
-    max-height: 200px;
+    max-width: 100%;
 }
 .section__galeria .btn{
     margin: 0;
@@ -541,6 +543,127 @@ footer a{
     display: block;
 }
 .modal__container img{
+    width: 100%;
+}
+/*CONTACTO*/
+.mapa{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mapa img{
+    width: 100%;
+}
+.formlulario__container{
+    padding: 5%;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.formulario__content{
+    border-radius: 5px;
+    padding: 10px;
+    border: none;
+    width: 49.5%;
+    font-size: 1.3em;
+    position: relative;
+    top: 10px;
+    margin-bottom: 1%;
+    box-shadow: #5555553a 0 0 3px;
+}
+.formulario__content--mensaje{
+    width: 100%;
+    height: 35vh;
+    text-align: justify;
+}
+.formulario__submit{
+    background: var(--grad-top);
+    color: #fff;
+    margin: 2% 0;
+    border-radius: 5px;
+    padding: 7px;
+    text-transform: uppercase;
+    width: 100%;
+    box-shadow: #5555553a 0 0 3px;
+}
+.formlulario__container .section__title{
+    width: 100%;
+    box-shadow: #5555553a 0 0 3px;
+}
+
+/*CABALGATAS*/
+.equinoterapia__imagen{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    margin-top: 20px;
+    height: 65%;
+}
+.equinoterapia__imagen img{
+    width: 100%;
+}
+.section__texto--equinoterapia{
+    padding: 30px 20px;
+}
+.equinoterapia__datos ul{
+    list-style: none;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.equinoterapia__datos li{
+    background: var(--grad-top);
+    width: 49%;
+    color: #fff;
+    padding: 7px 10px;
+    border-radius: 5px;
+    margin: 1px;
+    text-transform: uppercase;
+    text-align: center;
+}
+.cabalgatas ul{
+    list-style: none;
+}
+.section__h3{
+   padding: 0 30px; 
+}
+.formlulario__container .section__h2{
+    width: 100%;
+
+}
+.section__h3 h3, .section__h2 h2{
+    font-weight: 900;
+    font-family: var(--font-title);
+    padding: 0 0 10px;
+    color: var(--accent3);
+    text-transform: uppercase;
+    font-size: 2em;
+    text-align: right;
+    border-bottom: 1px solid;
+}
+
+.section__h2 h2{
+    font-size: 2rem;
+    text-align: left;
+}
+.cabalgatas__vestimenta p{
+    padding: 0 0 5px;
+    margin: 0;
+}
+.imagen__container{
+    width: 100%;
+    overflow: hidden;
+    height: 33vh;
+    display: flex;
+    align-items: end;
+    border-radius: 10px;
+}
+.imagen__container img{
     width: 100%;
 }
 /*RESPONSIVE*/
@@ -643,6 +766,9 @@ footer a{
     .galeria__imagen img{
         width: 520px;
     }
+    .section__galeria{
+        display: none;
+    }
 }
 
 @media (max-width: 768px){
@@ -717,12 +843,17 @@ footer a{
     .header__logo--vertical{
         display: flex;
     }
-    .section__galeria{
-        display: none;
-    }
+    
     .section__container--pages{
         max-width: 100%;
     }
+    .header__pages__titulo h1{
+        bottom: 0;
+        padding: 30px;
+        text-align: right;
+        right: 0;
+        font: 900 italic 4em var(--font-title)
+        }
 }
 @media(max-width:576px){
     .footer__rrss{
@@ -759,11 +890,5 @@ footer a{
         text-align: center;
         padding: 0 0 20px;
     }
-    .header__pages__titulo h1{
-    bottom: 0;
-    padding: 30px;
-    text-align: right;
-    right: 0;
-    font: 900 italic 4em var(--font-title)
-    }
+
 }
